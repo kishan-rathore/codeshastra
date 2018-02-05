@@ -1,6 +1,7 @@
 /codeshastra/settings/local.py
 *.sqlite3
 /venv
+/codeshastra/settings/local1.py
 
 
 
