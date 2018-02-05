@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Codeshstra</title>
+</head>
+<body>
+ <form method="post" action="{% url 'register' %}">
+{% csrf_token %}
+{{ form.as_p }}
+<button type="submit"> Register</button>
+<input type="hidden" name="next" value="{{ next }}" />
+</form>
+</body>
+</html>
