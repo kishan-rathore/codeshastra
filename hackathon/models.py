@@ -29,7 +29,7 @@ class UserProfile(models.Model):
             self.activation_key=code_generator()
             self.save()
             path_=reverse('hackathon:activate',kwargs={'code':self.activation_key})
-            path_='http://127.0.0.1:8000'+path_
+            path_='https://codeshastra-hackathon.herokuapp.com'+path_
             subject = 'Hackathon email activation'
             from_email = settings.DEFAULT_FROM_EMAIL
             message = f'activate your account here: {path_}'
