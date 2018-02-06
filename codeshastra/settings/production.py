@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hackathon.apps.HackathonConfig',
     'storages',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [

@@ -4,6 +4,7 @@ botocore==1.8.36
 dj-database-url==0.4.2
 Django==2.0.2
 django-crispy-forms==1.7.0
+django-extensions==1.9.9
 django-storages==1.6.5
 docutils==0.14
 gunicorn==19.7.1
@@ -17,3 +18,4 @@ python-dateutil==2.6.1
 pytz==2017.3
 s3transfer==0.1.12
 six==1.11.0
+typing==3.6.4
