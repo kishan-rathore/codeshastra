@@ -2,7 +2,7 @@
 *.sqlite3
 /venv
 /codeshastra/settings/local1.py
-
+/media
 
 
 .DS_STORE
