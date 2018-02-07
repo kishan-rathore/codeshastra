@@ -5,7 +5,7 @@
 /media
 /.idea
 .DS_STORE
-
+.idea/
 # Virtualenv related
 bin/
 include/
