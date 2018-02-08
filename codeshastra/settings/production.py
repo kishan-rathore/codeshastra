@@ -55,6 +55,8 @@ INSTALLED_APPS = [
     'hackathon.apps.HackathonConfig',
     'storages',
     'django_extensions',
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 

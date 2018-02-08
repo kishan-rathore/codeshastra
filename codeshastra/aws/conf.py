@@ -2,10 +2,6 @@ import datetime
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# AWS_ACCESS_KEY_ID = 'AKIAIFYIT35NYHK6LH7A'
-#
-#
-# AWS_SECRET_ACCESS_KEY =  '8qIOk4LobuNgpVxCSx87roMtosdg4N02WSVnSp/G'
 # AWS_FILE_EXPIRE = 200
 # AWS_PRELOAD_METADATA = True
 # AWS_QUERYSTRING_AUTH = True

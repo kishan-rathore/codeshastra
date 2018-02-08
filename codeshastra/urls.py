@@ -26,7 +26,9 @@ urlpatterns = [
     path('logout/', LogoutView.as_view(), name='logout'),
     path('register/', views.registerview.as_view(), name='register'),
     path('login/', LoginView.as_view(), name='login'),
-    path('', include('hackathon.urls'))
+    path('', include('hackathon.urls')),
+    path('api-auth/', include('rest_framework.urls'))
+
 ]
 #
 #

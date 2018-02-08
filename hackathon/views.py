@@ -13,6 +13,15 @@ from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 User=get_user_model()
 from .form import UserRegisterForm
 from .models import UserProfile
+from rest_framework.response import Response
+from . import serializers
+from rest_framework import viewsets
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.views import APIView
+from rest_framework import filters
+from rest_framework.authtoken.serializers import AuthTokenSerializer
+from rest_framework.authtoken.views import ObtainAuthToken
+from rest_framework.permissions import IsAuthenticatedOrReadOnly,IsAuthenticated
 # Create your views here.
 
 @login_required
@@ -74,3 +83,9 @@ class homeview(LoginRequiredMixin,View):
             return render(request, 'registration/login.html', {})
         return render(request,'hackathon/homefeed.html',{})
 
+
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = serializers.UserProfileSerialize
+
+    print(queryset)
