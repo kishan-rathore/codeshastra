@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 from codeshastra.aws.conf import *
-from codeshastra.aws.conf import *
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
