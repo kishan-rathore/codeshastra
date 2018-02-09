@@ -1,0 +1,94 @@
+.filterscontdiv {
+	float: right;
+	height: 420px;	/*try clientheight*/
+	width: 16%;
+	margin-top: 30px;
+	margin-right: 60px;
+	padding: 18px 1.5%;
+	overflow: auto;
+	background-color: white;
+	border-color: white;
+	border-style: solid;
+	border-radius: 30px;
+	box-shadow: inset 0 1px 8px 0.6px rgba(0,0,0,0.2);
+}
+.filterstable {
+	width: 100%;
+}
+.filtercell {
+	border-bottom-style: none;
+	padding: 0px;
+	padding-bottom: 10px;
+}
+.filter {
+	display: none;
+	border-radius: 20px;
+	width: 100%;
+	height: auto;
+	background-color: #87cefa;
+	box-shadow: 0 1px 15px 0.8px rgba(0,0,0,0.2);
+	padding-bottom: 12px;
+}
+.delfilter {
+	width: 16px;
+	color: #87cefa;
+	background-color: #4863a0;
+	font-size: 13px;
+	text-align: center;
+	border-radius: 4px;	
+	box-shadow: 0 1px 12px 0.7px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+.catseldiv {
+	width: 85%;
+	margin: auto;
+	margin-bottom: 0px;
+}
+.catsel {
+	width: 100%;
+	height: auto;
+	padding: 0px 5px;
+	margin-top: 5px;
+	text-align: center;
+	color: #4863a0;
+	background-color: white;
+	border-color: white;
+	border-radius: 20px;
+	box-shadow: 0 0 0 0;
+}
+.filteroptdiv {
+	width: 92%;
+	height: auto;
+	max-height: 125px;
+	overflow: auto;
+	margin-top: 10px;
+	color: #4863a0;
+	background-color: white;
+	border-color: white;
+	border-radius: 15px;
+	padding-left: 8%;
+}
+.filteroptsloading {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	overflow: auto;
+	padding: 5px 0px;
+}
+.filterhr {
+	margin: 12px;
+	margin-top: 2px;
+}
+.addfilter {
+	width: 65%;
+	height: 7%;
+	margin: auto;
+	display: table;
+	text-align: center;
+	border-radius: 30px;
+	font-size: 14px;
+	color: white;
+	background-color: #1874cd;
+	cursor: pointer;
+	box-shadow: 0 1px 12px 1px rgba(0,0,0,0.15);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		window.addEventListener("load", function(){
+
+			//create websockket instance
+			var socket = new WebSocket("ws://localhost:8080/ws");
+
+			//add event listener reacting when message is received 
+			socket.onmessage = function(event) {
+				var output = document.getElementById("output");
+				//put the received text into our output div 
+				output.textContent = event.data;
+			};
+
+			var form = document.getElementsByClassName("foo");
+			var input = document.getElementById("input");
+			form[0].addEventListener("submit", function(e) {
+				//submit event listener
+				//on submit send input to our server via WS
+				input_text = input.value; 
+				socket.send(input_text);
+				e.preventDefault();
+			});
+
+		});
+	</script>
+	<style>
+	    /* just some super basic css to make things bit more readable */
+	    div {
+	        margin: 10em;
+	    }
+	    form {
+	        margin: 10em;
+	    }
+</style>
+	<title>Hello World!</title>
+</head>
+<body>
+    <form class="foo">
+        <input id="input"></input>
+        <input type="submit"></input>
+    </form>
+    <div id="output"></div>
+</body>
+</html>

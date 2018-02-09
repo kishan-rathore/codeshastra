@@ -1,0 +1,230 @@
+/*Tabs*/
+html, #map { height: 100%; }
+body { height: 90%; }
+td.titlemenu {
+	border-style: none;
+	font-size: 16px;
+	width: 33.33%;
+	padding: 10px;
+	border-right-style: solid;
+	border-right-width: thin;
+	border-color: #f3f3f4;
+	cursor: pointer;
+}
+td.titlemenu:last-child {	border-right-style: none; }
+td.titlemenu:hover { background-color: #1874cd !important; }
+
+/*Map*/
+#map {
+	width: 90%;
+	margin: auto;
+	margin-top:10px ;
+	box-shadow: 0 2px 25px 1px rgba(0,0,0,0.3);
+	border-radius: 20px;
+	/*border-color: #87cefa;*/
+}
+
+/*Fleet Stats*/
+tr.fleetstats:hover td { 
+	background-color: #815680;
+	color: white;
+}
+td.fleetstats { 
+	font-size: 18px;
+	color: #666b85;
+	border-color: #f3f3f4;
+	border-bottom-width: medium;
+	padding: 15px;
+	background-color: white;
+	/*background-color: #ebebeb;*/
+}
+td.fleetstats:first-child { width: 80% }
+
+/*Graphs*/
+#graphseldiv{
+	width: 25%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+#graphsel {
+	width: 100%;
+	height: auto;
+	padding: 2px 15%;
+	background-color: white;
+	box-shadow: 0 2px 15px 1px rgba(0,0,0,0.2);
+	border-radius: 15px;
+	border-color: white;
+	color: #815680;
+	font-size: 14px;
+}
+
+.chartcontdiv {
+	height: 100%;
+	display: none;
+	width: 80%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+.chartcontdivrowA {
+	height: 91%;
+	min-height: 432px;
+}
+/*main chart cont*/
+.chartdiv {
+	float: left;
+	width: 77%;
+	height: 100%;
+	border-radius: 30px;
+	box-shadow: 0 1px 12px 0.8px rgba(0,0,0,0.2);
+	background-color: white;
+	margin-right: 0.5%;
+	margin-bottom: 1.5%;
+	/*background-color: #DBFEF8;*/
+}
+.chartload1 {
+	width: 100%;
+	height: 100%;
+	display: table;
+	text-align: center;
+}
+.chartload2 {
+	width: 100%;
+	height: auto;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 40px;
+	color: #4863a0;
+}
+/*filters cont*/
+.filterscontdiv {
+	float: right;
+	width: 19%;
+	height: calc(100% - 40px);
+	overflow: auto;
+	background-color: white;
+	border-radius: 30px;
+	box-shadow: 0 1px 12px 0.8px rgba(0,0,0,0.2);
+	margin-bottom: 1.5%;
+	padding: 18px 1.5%;
+}
+.filterstable {
+	width: 100%;
+}
+.filtercell {
+	border-bottom-style: none;
+	padding: 0px;
+	padding-bottom: 10px;
+}
+.filter {
+	display: none;
+	border-radius: 20px;
+	width: 100%;
+	height: auto;
+	background-color: #87cefa;
+	box-shadow: 0 1px 12px 0.7px rgba(0,0,0,0.15);
+	padding-bottom: 12px;
+}
+.delfilter {
+	width: 16px;
+	color: #87cefa;
+	background-color: #4863a0;
+	font-size: 13px;
+	text-align: center;
+	border-radius: 4px;	
+	box-shadow: 0 1px 12px 0.7px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+.catseldiv {
+	width: 85%;
+	margin: auto;
+	margin-bottom: 0px;
+}
+.catsel {
+	width: 100%;
+	height: auto;
+	padding: 0px 5px;
+	margin-top: 5px;
+	text-align: center;
+	color: #4863a0;
+	background-color: white;
+	border-color: white;
+	border-radius: 20px;
+	box-shadow: 0 0 0 0;
+}
+.filteroptdiv {
+	width: 92%;
+	height: auto;
+	max-height: 125px;
+	overflow: auto;
+	margin-top: 10px;
+	color: #4863a0;
+	background-color: white;
+	border-color: white;
+	border-radius: 15px;
+	padding-left: 8%;
+}
+.filteroptsloading {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	overflow: auto;
+	padding: 5px 0px;
+}
+.filterhr {
+	margin: 12px;
+	margin-top: 2px;
+}
+.addfilter {
+	width: 65%;
+	height: 7%;
+	margin: auto;
+	display: table;
+	text-align: center;
+	border-radius: 30px;
+	font-size: 14px;
+	color: white;
+	background-color: #1874cd;
+	cursor: pointer;
+	box-shadow: 0 1px 8px 0.6px rgba(0,0,0,0.15);
+}
+/*end filters*/
+.chartcontdivrowB {
+	height: 7%;
+	min-height: 30px;
+}
+/*ndiv cont*/
+.chartcontfooter {
+	float: left;
+	width: 77%;
+	height: 100%;
+	background-color: white;
+	border-radius: 30px;
+	box-shadow: 0 1px 12px 0.8px rgba(0,0,0,0.2);
+	margin-right: 0.5%;
+	text-align: center;
+	font-size: 15px;
+	color: #815680;
+	display: table;
+}
+.ndiv {
+	width: 10%;
+	text-align: right;
+	font-size: 11px;
+	overflow: hidden;
+}
+/*end ndiv cont*/
+.chartsubmit {
+	float: right;
+	width: 22%;
+	height: 100%;
+	background-color: #1874cd;
+	border-radius: 30px;
+	box-shadow: 0 1px 12px 0.8px rgba(0,0,0,0.4);
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	display: table;
+	cursor: pointer;
+}

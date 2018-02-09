@@ -1,4 +1,27 @@
-{% extends 'hackathon/base.html' %}
-{% block content %}
-<h>Cool Website</h>
-{%endblock %}
+{% extends "hackathon/base1.html" %}
+{% load static %}
+<!--suppress ALL -->
+
+<meta http-equiv="Cache-control" content="public">
+<link rel="stylesheet" href="https://rawgit.com/wenzhixin/bootstrap-table/master/dist/bootstrap-table.min.css">
+{% block bodycontent %}
+<style>
+td {
+    width: 100px;
+}
+
+th {
+    width: 100px;
+}
+    .mo {
+        display:    none;
+        background: url("https://preloaders.net/preloaders/17/preview.gif")
+                    50% 50%
+                    no-repeat;
+    }
+    .red {
+      background-color: #ffced8 !important;
+    }
+</style>
+{% endblock %}
+
